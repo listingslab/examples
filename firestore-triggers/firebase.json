@@ -1,0 +1,23 @@
+{
+  "database": {
+    "rules": "./src/utils/database.rules.json"
+  },
+  "hosting": {
+    "public": "build",
+    "rewrites": [
+      {
+        "source": "/api/**",
+        "function": "api"
+      },
+      {
+        "source": "/firestore-console/**",
+        "destination": "/firestore-console/index.html"
+      }
+    ],
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

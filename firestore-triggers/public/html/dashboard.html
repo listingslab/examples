@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+<!--
+        ____      _   _   _   _     _____     ____   _       _   _    ____
+      U|  _"\ uU |"|u| | | \ |"|   |_ " _| U /"___| |"|   U |"|u| |U | __")u
+      \| |_) |/ \| |\| |<|  \| |>    | |   \| | u U | | u  \| |\| | \|  _ \/
+       |  __/    | |_| |U| |\  |u   /| |\   | |/__ \| |/__  | |_| |  | |_) |
+       |_|      <<\___/  |_| \_|   u |_|U    \____| |_____|<<\___/   |____/
+       ||>>_   (__) )(   ||   \\,-._// \\_  _// \\  //  \\(__) )(   _|| \\_
+      (__)__)      (__)  (_")  (_/(__) (__)(__)(__)(_")("_)   (__) (__) (__)
+
+-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5820c">
+    <title>Punt Club React</title>
+    <meta name="description"
+    content="Punt Club automates all the admin of running a punters club, for free.
+    No spreadsheets, no chasing friends for money, cash out at any time.
+    Let the banter begin!">
+    <meta name="keywords" content="Punt Club, betting, sport bets, punters club, group betting, betting syndicate">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+
+      <link rel="apple-touch-icon" href="icons/icon-512x512.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="icons/icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="96x96" href="icons/icon-96x96.png">
+      <link rel="apple-touch-icon" sizes="128x128" href="icons/icon-128x128.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="icons/icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="icons/icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="192x192" href="icons/icon-192x192.png">
+      <link rel="apple-touch-icon" sizes="384x384" href="icons/icon-384x384.png">
+      <link rel="apple-touch-icon" sizes="512x512" href="icons/icon-512x512.png">
+
+    <link rel="stylesheet" href="libs/bootstrap/4.0.0-beta.2/dist/css/bootstrap.min.css" />
+    <link href="//fonts.googleapis.com/css?family=Montserrat|Muli" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="libs/odometer/themes/odometer-theme-minimal.css" />
+
+  </head>
+  <body>
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 py-4">
+              <p class="text-muted">
+                  Delivers a working react app which also includes the Bootstrap 4 Framework and connects to real time updates on the puntclub-staging Firebase project's Cloud Firestore.
+              </p>
+            </div>
+            <div class="col-sm-4 py-4">
+              <p class="text-muted">Links</p>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="https://puntclub-staging.firebaseapp.com/" target="_blank" class="text-white">puntclub-staging.firebaseapp.com</a></li>
+                <li>
+                  <a href="https://bitbucket.org/puntclub/punt-club-react/" target="_blank" class="text-white">
+                    Bitbucket Repo</a></li>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark">
+        <div class="container d-flex justify-content-between">
+          <a href="/" class="navbar-brand">Punt Club React</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+
+      <div class="instructions alert alert-success" role="alert">
+
+        <script>
+          function openFirebaseConsle (){
+            window.open('/firestore-console/index.html', '_blank', 'location=yes,height=650,width=600,scrollbars=yes,status=yes');
+          };
+        </script>
+
+        <p><button type="button" onclick="openFirebaseConsle();" class="btn btn-success" style="float: right; margin: 25px;">Change Firestore Data</button>Sprint 1 <a href="https://bitbucket.org/puntclub/punt-club-react/branch/epic/Sprint_1" target="_blank">Delivers</a> a working react app which also includes the <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank">Bootstrap 4</a> Framework and connects to real time updates on the puntclub-staging Firebase project's <a href="https://console.firebase.google.com/u/0/project/puntclub-staging/database/firestore/data~2Fpunt-club-react~2FTdbO7cQUGCJaEHrleSaI" target="_blank">Cloud Firestore</a>. It also includes a forked, customised instance of <a href="" target="_blank">firestore console</a>, an Open Source development tool by <a href="https://listingslab.com/" target="_blank">listingslab</a> whose development is not part of the punt club bill. This represents <a href="https://docs.google.com/spreadsheets/d/1D8e1CtoftLhPBjTsytsVsISK-et0E3SKryT7LiWvaEs/edit#gid=1" target="_blank">35 hours of work</a>.
+        </p>
+
+      </div>
+
+        <div id="punt-club-dashboard"></div>
+
+    </div>
+
+    <div class="fullscreen-bg">
+        <video loop muted autoplay poster="images/png/vlc-00001.png" class="fullscreen-bg__video">
+            <source src="/libs/punt-club/videos/bg2.webm" type="video/webm">
+            <source src="/libs/punt-club/videos/bg2.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="html/bootstrap_examples/jquery-3.2.1.slim.min.js"><\/script>')</script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/holder.min.js"></script>
+    <script src="libs/odometer/odometer.js"></script>
+
+  </body>
+</html>
+
+<!-- This is a React APP embedded in a Bootstrap v4 provisioned HTML page. Goes together like a day at the races &amp; a bottle of fizz. With React JS we can extend the dashboard functionality iteratively to include required features over time -->

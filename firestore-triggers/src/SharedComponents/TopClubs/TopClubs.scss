@@ -1,0 +1,22 @@
+/**
+ * Aligent
+ *
+ * @package     firestore-events
+ * @author      Chris Dorward <chris.dorward@aligent.com.au>
+ * @repo        https://bitbucket.org/aligent/aligent-pwaboiler
+ *
+ */
+
+.top-clubs {
+  border: 1px solid rgba(0,0,0, 0.7);
+  margin-top: 25px;
+  color: rgba(255,255,255, 0.9);
+  h2 {
+    background: rgba(0,0,0,0.6);
+    color: rgba(255,255,255, 0.9);
+  }
+  img{
+    width: 75px;
+    margin: 15px;
+  }
+}

@@ -1,0 +1,73 @@
+/**
+ * Punt Club React
+ *
+ * @package    punt-club-react
+ * @author     Chris Dorward <listingslab@gmail.com>
+ */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.instructions{
+  margin: 18px;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 13px;
+}
+
+.instructions a{
+  color: black;
+  font-weight: bold;
+}
+.instructions a{
+  color: #353b40;
+  font-weight: bold;
+}
+.instructions a:hover{
+  color: #24659b;
+  text-decoration: none;
+}
+
+
+
+.fullscreen-container{
+  margin-top:25px;
+}
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    background: url('/images/png/vlc-00001.png') center center / cover no-repeat;
+  }
+  .fullscreen-bg__video {
+    display: none;
+  }
+}
