@@ -24,8 +24,8 @@
 Install the node dependencies locally. note: Latest versions of npm automatically generate a [package-lock.json](https://docs.npmjs.com/files/package-lock.json) file
 
 ```bash
-git clone git@bitbucket.org:puntclub/punt-club-react.git
-cd punt-club-react
+git clone https://github.com/listingslab/examples
+cd ./examples/firestore-triggers
 npm install
 cd functions && npm install && cd ../
 ```
