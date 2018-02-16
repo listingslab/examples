@@ -10,4 +10,4 @@
 ```
 # examples
 
-- ## firestore-events
+- ## firestore-triggers

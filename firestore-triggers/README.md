@@ -1,14 +1,14 @@
 ```bash
-		/**
-		 * Aligent
-		 *
-		 * @package     firestore-events
-		 * @author      Chris Dorward <chris.dorward@aligent.com.au>
-		 * @repo        https://bitbucket.org/aligent/aligent-pwaboiler
-		 *
-		 */
+	/**
+	 * Aligent
+	 *
+	 * @package     firestore-triggers
+	 * @author      Chris Dorward <chris.dorward@aligent.com.au>
+	 * @repo        https://bitbucket.org/aligent/aligent-pwaboiler
+	 *
+	 */
 ```
-# firestore-events
+# firestore-triggers
 
 ## Features  
 

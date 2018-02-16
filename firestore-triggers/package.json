@@ -1,6 +1,6 @@
 {
-  "name": "firestore-events",
-  "description": "Update the view in real time",
+  "name": "firestore-triggers",
+  "description": "Aligent. Update the view in real time",
   "main": "./src/index.js",
   "version": "0.1.1",
   "license": "OSL-3.0",
