@@ -1,0 +1,14 @@
+&, &:before, &:after,
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: $link-color;
+  transition: all 300ms ease-out;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+}

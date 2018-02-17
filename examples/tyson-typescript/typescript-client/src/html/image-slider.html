@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='utf-8'>
+	<title>TYPESCRIPT IMAGE SLIDER</title>
+
+	<link rel='stylesheet' href='typescript.css'/>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oxygen|Roboto'>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
+</head>
+
+<body class=''>
+
+<div id='ts_container' class='ts-component'>
+	<div id='ts_image_slider_example'></div>
+</div>
+
+
+
+<script src='typescript.js'></script>
+<script type='text/javascript'>
+    jQuery(function() {
+
+        /////////////////////////
+        ///// SLIDER: image /////
+        /////////////////////////
+
+        Model.get().view.new({
+            'classId': 'Slider',
+            'target': '#ts_image_slider_example',
+
+            'id': 'image-slider-example',
+            'classes': 'add-custom classes-here',
+            'type': 'bg-image',
+            'loader': {
+                'content': '...LOADING BABY!...'
+            },
+
+            "setMenuImages": 'true',
+
+            'nav': {
+                'id': '',
+                'classes': 'overlay overlay-bottom',
+                'type': '',
+                'cycle': 'true',
+                'linear': 'false',
+                'labels': {
+                    'icons': 'true', // SMELL: later have option for both
+                    'previous': 'Previous',
+                    'next': 'Next',
+                    'continue': 'Continue',
+                    'submit': 'Submit'
+                },
+                // add onSubmit to enable submit on last slide
+                // conditions: (linear == true  &&  onSubmit)
+                // 'onSubmit': function(){
+                // 	alert('***** NAV SUBMIT! *****');
+                // },
+
+                // add menu to show radio buttons for slides
+                'menu': {
+                    'id': '',
+                    'classes': 'horizontal',
+                    'type': 'radio',
+                    // 'interaction': 'locked',
+                    'labels': {
+                        'nthId': 'true'
+                    }
+                }
+            },
+
+            'slides': {
+                'id': '',
+                'classes': '',
+                'ratio': 2.35, /* REQUIRED :: bgImages */
+                'transition': 'panel', /* [fade (default), panel]*/
+                // 'panelWidth': 0.80, /* DEFAULT :: 1 (transition:panel)? */
+                'panels': 5, /* OVERRIDES :: panelWidth */
+                'bgImages': [
+                    'https://i.ytimg.com/vi/CnLGJHtdH1w/maxresdefault.jpg',
+                    'https://a.ltrbxd.com/resized/sm/upload/ht/ra/iv/pe/deadpool-1200-1200-675-675-crop-000000.jpg',
+                    'https://www.maxim.com/.image/t_share/MTQ3MDM2Nzg3NzcwOTI2OTk5/deadpool-2.jpg',
+                    'https://news.marvel.com/wp-content/uploads/2016/09/579278e395d42.jpg',
+                    'https://www.theedgesusu.co.uk/wp-content/uploads/2017/08/deadpool-cable-sentinels-art.jpg',
+                    'https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/deadpool-vika-chan.jpg',
+                    'http://is1.mzstatic.com/image/thumb/Video4/v4/69/97/72/69977202-baa8-227d-26eb-18eddcc6c3f2/source/1200x630bb.jpg'
+                ]
+            }
+        });
+
+    });
+</script>
+
+</body>
+</html>

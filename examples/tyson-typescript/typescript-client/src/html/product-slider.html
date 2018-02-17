@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='utf-8'>
+	<title>TYPESCRIPT PRODUCT SLIDER</title>
+
+	<link rel='stylesheet' href='typescript.css'/>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oxygen|Roboto'>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
+</head>
+
+<body class=''>
+
+	<div id='ts_container' class='ts-component'>
+		<div id='ts_slider_example'></div>
+	</div>
+
+
+
+	<script src='typescript.js'></script>
+	<script type='text/javascript'>
+		jQuery(function() {
+
+			//////////////////
+			///// SLIDER /////
+			//////////////////
+
+            Model.get().view.new({
+				'classId': 'Slider',
+				'target': '#ts_slider_example',
+
+				'id': 'slider-example',
+				'classes': '',
+
+                'loader': {
+                    'content': '...LOADING BITCH!...'
+                },
+
+				'setMenuImages': 'true',
+
+				'nav': {
+					'id': '',
+					'classes': '',
+					'type': '',
+					'cycle': 'true',
+					'linear': 'false',
+					'labels': {
+					    'icons': 'true',
+						'previous': 'Previous',
+						'next': 'Next',
+						'continue': 'Continue',
+						'submit': 'Submit'
+					},
+					// add onSubmit to enable submit on last slide
+					// conditions: (linear == true  &&  onSubmit)
+					// 'onSubmit': function(){
+					// 	alert('***** NAV SUBMIT! *****');
+					// },
+
+					// add menu to show radio buttons for slides
+					'menu': {
+						'id': '',
+						'classes': 'horizontal',
+						'type': 'radio',
+						// 'interaction': 'locked',
+						'labels': {
+						    'nthId': 'true'
+						}
+					}
+				},
+
+				'slides': {
+					'id': '',
+					'classes': 'padded-slides',
+					// 'ratio': 2.35, /* mainly for image-only versions */
+					'transition': 'panel',
+					// 'panelWidth': 0.333333,
+					'panels': 3,
+					'items': [
+						{
+							'id': 'client-slide-1',
+							'classes': 'slide-1-class',
+                            'imageUrl': 'https://i.ytimg.com/vi/CnLGJHtdH1w/maxresdefault.jpg',
+							'content': '<h3>Some stuff</h3><p>Lorem Ipsum</p>',
+                            'link': {
+                                'url': 'https://i.ytimg.com/vi/CnLGJHtdH1w/maxresdefault.jpg'
+                            }
+						},
+						{
+							'id': 'client-slide-2',
+							'classes': '',
+                            'imageUrl': 'https://a.ltrbxd.com/resized/sm/upload/ht/ra/iv/pe/deadpool-1200-1200-675-675-crop-000000.jpg',
+                            'content': '<h3>Some stuff</h3><p>Lorem Ipsum <a href="http://www.google.com">Dolor Sit</a> Amet</p>',
+							// CANNOT HAVE LINK WITH CHILD LINK
+                            // 'link': {
+                            //     'url': 'https://news.marvel.com/wp-content/uploads/2016/09/579278e395d42.jpg'
+                            // }
+						},
+						{
+							'id': 'client-slide-3',
+							'classes': '',
+                            'imageUrl': 'https://www.maxim.com/.image/t_share/MTQ3MDM2Nzg3NzcwOTI2OTk5/deadpool-2.jpg',
+                            'content': '<h3>Some stuff</h3><p>Lorem Ipsum</p><p>Erant dolores an eum. Te diceret impedit vix, nominati gubergren duo ei. Imperdiet moderatius mei ea. Id aperiri suavitate usu, melius delectus ei est, te nam postea tractatos scriptorem. Modo laudem alienum usu an, ea verear omnesque eos.</p>',
+                            'link': {
+                                'url': 'https://www.maxim.com/.image/t_share/MTQ3MDM2Nzg3NzcwOTI2OTk5/deadpool-2.jpg'
+                            }
+						},
+						{
+							'id': 'client-slide-4',
+							'classes': '',
+							'imageUrl': 'https://news.marvel.com/wp-content/uploads/2016/09/579278e395d42.jpg',
+                            'content': '<h3>Some stuff</h3><p>Lorem Ipsum</p>',
+                            'link': {
+                                'function': function() { alert("This one executes this!"); }
+                            }
+						},
+						{
+							'id': 'client-slide-5',
+							'classes': '',
+                            'imageUrl': 'https://www.theedgesusu.co.uk/wp-content/uploads/2017/08/deadpool-cable-sentinels-art.jpg',
+                            'content': '<h3>Some stuff</h3><p>Lorem Ipsum</p>',
+                            'link': {
+                                'url': 'https://www.theedgesusu.co.uk/wp-content/uploads/2017/08/deadpool-cable-sentinels-art.jpg'
+                            }
+						}
+					]
+				}
+			});
+
+        });
+	</script>
+
+</body>
+</html>

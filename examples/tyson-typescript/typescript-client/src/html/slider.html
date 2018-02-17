@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='utf-8'>
+	<title>TYPESCRIPT SLIDER</title>
+
+	<link rel='stylesheet' href='typescript.css'/>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oxygen|Roboto'>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
+</head>
+
+<body class=''>
+
+	<div id='ts_container' class='ts-component'>
+		<div id='ts_slider_example'></div>
+	</div>
+
+
+
+	<script src='typescript.js'></script>
+	<script type='text/javascript'>
+		jQuery(function() {
+
+			//////////////////
+			///// SLIDER /////
+			//////////////////
+
+            Model.get().view.new({
+				'classId': 'Slider',
+				'target': '#ts_slider_example',
+
+				'id': 'slider-example',
+				'classes': 'add-custom classes-here',
+
+                'loader': {
+                    'content': '...LOADING BITCH!...'
+                },
+
+				'nav': {
+					'id': '',
+					'classes': '',
+					'type': '',
+					'cycle': 'true',
+					'linear': 'false',
+					'labels': {
+					    'icons': 'true',
+						'previous': 'Previous',
+						'next': 'Next',
+						'continue': 'Continue',
+						'submit': 'Submit'
+					},
+					// add onSubmit to enable submit on last slide
+					// conditions: (linear == true  &&  onSubmit)
+					// 'onSubmit': function(){
+					// 	alert('***** NAV SUBMIT! *****');
+					// },
+
+					// add menu to show radio buttons for slides
+					'menu': {
+						'id': '',
+						'classes': 'horizontal',
+						'type': 'radio',
+						'interaction': 'locked',
+						'labels': {
+						    'nthId': 'true'
+						}
+					}
+				},
+
+				'slides': {
+					'id': '',
+					'classes': '',
+					'items': [
+						{
+							'id': 'client-slide-1',
+							'classes': 'slide-1-class',
+							'content': '<h1>Slide #1 content w/image</h1><p>Lorem ipsum dolor sit amet, ad mucius inciderint ius, mea cu agam iriure luptatum. Cu ius fugit dolores philosophia, his ad putent cotidieque, ei nam luptatum efficiendi. Discere senserit corrumpit nam et, ut qui magna everti contentiones. Recusabo oportere mel et. Ludus oblique interesset vis at, vero cetero his ex, nec ne nonumy labitur blandit.</p><p>Ludus accusata molestiae an has, ei est mucius iriure suscipiantur, ex his pertinacia constituam. Duis nusquam facilisis ne qui, mutat error tritani no mei. Per modo ignota at, ut vis integre omnesque, laudem fabellas qui in. Eu pro appetere luptatum, exerci aliquam ponderum te vel, vim an sumo agam sadipscing. Mel in quidam audire euismod.</p><p><img class="full-width" src="https://nerdist.com/wp-content/uploads/2017/01/marvel_deadpool_movie-wide.jpg"></p>'
+						},
+						{
+							'id': 'client-slide-2',
+							'classes': '',
+							'content': '<h1>Slide #2 low content</h1><p>Has ea nihil congue fuisset. Cu sea commune molestie salutandi. Omnes similique ne vix, vel ea suas choro sanctus. Ea mel maiorum hendrerit, no populo blandit recusabo sea, et dico ludus feugait nam. Esse impetus fabulas vim et, vel ei quis assum.</p><p>Omnium ornatus scriptorem sed et. Mea quando oblique vituperatoribus ut, detracto singulis dissentias eu duo. Has mollis prompta denique ea, congue deserunt antiopam sed no. An corrumpit argumentum vel. No ius scripta deleniti disputando, nullam eirmod moderatius ne eam. Aliquid dissentiet sit ea.</p>'
+						},
+						{
+							'id': 'client-slide-3',
+							'classes': '',
+							'content': '<h1>Slide #3 high content</h1><p>Ludus accusata molestiae an has, ei est mucius iriure suscipiantur, ex his pertinacia constituam. Duis nusquam facilisis ne qui, mutat error tritani no mei. Per modo ignota at, ut vis integre omnesque, laudem fabellas qui in. Eu pro appetere luptatum, exerci aliquam ponderum te vel, vim an sumo agam sadipscing. Mel in quidam audire euismod.</p><p>Has ea nihil congue fuisset. Cu sea commune molestie salutandi. Omnes similique ne vix, vel ea suas choro sanctus. Ea mel maiorum hendrerit, no populo blandit recusabo sea, et dico ludus feugait nam. Esse impetus fabulas vim et, vel ei quis assum.</p><p>Has ea nihil congue fuisset. Cu sea commune molestie salutandi. Omnes similique ne vix, vel ea suas choro sanctus. Ea mel maiorum hendrerit, no populo blandit recusabo sea, et dico ludus feugait nam. Esse impetus fabulas vim et, vel ei quis assum.</p><p>Omnium ornatus scriptorem sed et. Mea quando oblique vituperatoribus ut, detracto singulis dissentias eu duo. Has mollis prompta denique ea, congue deserunt antiopam sed no. An corrumpit argumentum vel. No ius scripta deleniti disputando, nullam eirmod moderatius ne eam. Aliquid dissentiet sit ea.</p><p>Has ea nihil congue fuisset. Cu sea commune molestie salutandi. Omnes similique ne vix, vel ea suas choro sanctus. Ea mel maiorum hendrerit, no populo blandit recusabo sea, et dico ludus feugait nam. Esse impetus fabulas vim et, vel ei quis assum.</p>'
+						},
+						{
+							'id': 'client-slide-4',
+							'classes': '',
+							'content': '<h1>Slide #4 micro content w/image float</h1><img src="https://upload.wikimedia.org/wikipedia/en/4/46/Deadpool_poster.jpg" style="float:right;margin: 0 0 1em 1em;" /><p>Has ea nihil congue fuisset. Cu sea commune molestie salutandi. Omnes similique ne vix, vel ea suas choro sanctus. Ea mel maiorum hendrerit, no populo blandit recusabo sea, et dico ludus feugait nam. Esse impetus fabulas vim et, vel ei quis assum.</p>'
+						},
+						{
+							'id': 'client-slide-5',
+							'classes': '',
+							'content': '<h1>Slide #5 high content w/image float</h1><img src="https://upload.wikimedia.org/wikipedia/en/4/46/Deadpool_poster.jpg" style="float:right;margin: 0 0 1em 1em;" /><p>Ludus accusata molestiae an has, ei est mucius iriure suscipiantur, ex his pertinacia constituam. Duis nusquam facilisis ne qui, mutat error tritani no mei. Per modo ignota at, ut vis integre omnesque, laudem fabellas qui in. Eu pro appetere luptatum, exerci aliquam ponderum te vel, vim an sumo agam sadipscing. Mel in quidam audire euismod.</p><p>Has ea nihil congue fuisset. Cu sea commune molestie salutandi. Omnes similique ne vix, vel ea suas choro sanctus. Ea mel maiorum hendrerit, no populo blandit recusabo sea, et dico ludus feugait nam. Esse impetus fabulas vim et, vel ei quis assum.</p><p>Has ea nihil congue fuisset. Cu sea commune molestie salutandi. Omnes similique ne vix, vel ea suas choro sanctus. Ea mel maiorum hendrerit, no populo blandit recusabo sea, et dico ludus feugait nam. Esse impetus fabulas vim et, vel ei quis assum.</p><p>Omnium ornatus scriptorem sed et. Mea quando oblique vituperatoribus ut, detracto singulis dissentias eu duo. Has mollis prompta denique ea, congue deserunt antiopam sed no. An corrumpit argumentum vel. No ius scripta deleniti disputando, nullam eirmod moderatius ne eam. Aliquid dissentiet sit ea.</p><p>Has ea nihil congue fuisset. Cu sea commune molestie salutandi. Omnes similique ne vix, vel ea suas choro sanctus. Ea mel maiorum hendrerit, no populo blandit recusabo sea, et dico ludus feugait nam. Esse impetus fabulas vim et, vel ei quis assum.</p>'
+						}
+					]
+				}
+			});
+
+        });
+	</script>
+
+</body>
+</html>

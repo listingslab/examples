@@ -6,13 +6,32 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Examples</h1>
+          <a href="/home">
+            <img 
+              width={50}
+              height={50}
+              src="/png/black/72x72.png"
+              alt="listingslab logo" 
+              className="logo" />
+              <h1>PWA Examples</h1>
+          </a>
         </header>
-        <ul>
-          <li><a href="/examples/firestore-triggers">firestore-triggers</a></li>
-          <li><a href="/examples/push-notifications">push-notifications</a></li>
-          <li><a href="/examples/pwaboiler">pwaboiler</a></li>
-        </ul>
+
+        <div className="nav">
+          <h2 className="header-link">
+            <a href="/examples/push-notifications">Push Notifications</a>
+          </h2>
+          <p>Let's be honest that's why we're here. The client asks for 'em and we're giving them away free with a tank of petrol</p>
+          <h2 className="header-link">
+            <a href="/examples/firestore-triggers">Firestore Triggers</a>
+            
+          </h2>
+          <p>What can you do with event triggers from a database?</p>
+          <h2 className="header-link">
+            <a href="/examples/pwaboiler">PWA Boiler</a>
+          </h2>
+            Fully featured React/Redux PWA Boilerplate.
+        </div>
       </div>
     );
   }

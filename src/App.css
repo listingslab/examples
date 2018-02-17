@@ -1,10 +1,20 @@
 .App {
-  
+  font-family: sans-serif;
+}
+
+.nav {
+  background: rgba(0,0,0, 0.1);
+  margin: 15px;
+  padding: 15px;
 }
 
 ul, li{
 	list-style: none;
+}
 
+a{
+  text-decoration: none;
+  color: white;
 }
 
 li a{
@@ -13,10 +23,34 @@ li a{
 }
 
 li a:hover{
-	text-decoration: none;
 	color: orange;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+h2 {
+  font-size: 2.0rem;
+}
+
+.header-link a{
+  color:black;
+  text-decoration: none;
+}
+
+.header-link a:hover{
+  color: orange;
+}
+
+.logo {
+  float: right;
+  margin-left: 10px;
+  padding-top: 10px;
+}
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -24,7 +58,7 @@ li a:hover{
 }
 
 .App-header {
-  background-color: #222;
+  background-color: black;
   padding: 20px;
   color: white;
 }
