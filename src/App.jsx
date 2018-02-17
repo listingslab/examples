@@ -14,6 +14,7 @@ class App extends Component {
               alt="listingslab logo" 
               className="logo" />
               <h1>Push Prototype</h1>
+              <p>Working Apps you can explore</p>
           </a>
         </header>
 
@@ -35,16 +36,23 @@ class App extends Component {
 
         <div className="main">
           <h2>
-            <a 
-              className="black"
+
+          <a 
               href="https://github.com/listingslab/examples"
               target="_blank"
-            >Fork it.
-
-            <img 
+              rel="noopener noreferrer"
+            ><img 
+              alt="fork it on github"
               className="github"
               src="/svg/Octicons-mark-github.svg" 
-            />
+            /></a>
+
+            <a 
+              className="black forkit"
+              href="https://github.com/listingslab/examples"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Fork it.
             </a>
           </h2>
         </div>
