@@ -13,7 +13,7 @@ class App extends Component {
               src="/png/black/72x72.png"
               alt="listingslab logo" 
               className="logo" />
-              <h1>PWA Examples</h1>
+              <h1>Push Prototype</h1>
           </a>
         </header>
 
@@ -31,6 +31,22 @@ class App extends Component {
             <a href="/examples/pwaboiler">PWA Boiler</a>
           </h2>
             Fully featured React/Redux PWA Boilerplate.
+        </div>
+
+        <div className="main">
+          <h2>
+            <a 
+              className="black"
+              href="https://github.com/listingslab/examples"
+              target="_blank"
+            >Fork it.
+
+            <img 
+              className="github"
+              src="/svg/Octicons-mark-github.svg" 
+            />
+            </a>
+          </h2>
         </div>
       </div>
     );
