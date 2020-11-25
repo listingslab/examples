@@ -1,0 +1,8 @@
+{
+  "name": "examples",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/listingslab/examples.git",
+  "author": "milky <listingslab@gmail.com>",
+  "license": "MIT"
+}
